@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Gastos{% endblock %}
+{% block header %}Gastos{% endblock %}
+
+{% block content %} 
+			<p>Monto <input type="text" name="FirstName" required></p><br>
+			<p>Descripcion <input type="text" name="LastName" value=""></p><br>
+			
+			<p>Fecha<input type="date" name="fecha" size="20"></p><br>
+			<p>Hora<input type="time" name="hora"></p><br>
+			<p>Categoria
+				<select>
+					<option>corsa</option>
+					<option>toyota</option>
+				</select>
+			</p><br>
+			<p>
+				<input type="button" value="Guardar">
+				<input type="button" value="Gestionar categorias">
+			</p>
+{% endblock %}
