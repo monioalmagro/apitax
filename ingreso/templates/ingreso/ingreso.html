@@ -10,10 +10,11 @@
     {% block content %}
     
         {% for ingresos in ingreso %}
-            {{ingresos.monto}}
-            {{ingresos.fecha}}
-            {{ingresos.descripcion}}
-             <br>
+        <ul>
+            <li>{{ingresos.monto}}</li>
+            <li>{{ingresos.fecha}}</li>
+            <li>{{ingresos.descripcion}}</li>
+        </ul>     <br>
         {% endfor %}
         
     {% endblock content %}
