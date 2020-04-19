@@ -10,8 +10,12 @@
     {% block content %}
     
         {% for ingresos in ingreso %}
-            {{ingresos.monto}} <br>
+            {{ingresos.monto}}
+            {{ingresos.fecha}}
+            {{ingresos.descripcion}}
+             <br>
         {% endfor %}
+        
     {% endblock content %}
 </body>
 </html>
