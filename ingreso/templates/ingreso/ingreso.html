@@ -7,5 +7,11 @@
 </head>
 <body>
     <h1>Soy ingreso</h1>
+    {% block content %}
+    
+        {% for ingresos in ingreso %}
+            {{ingresos.monto}} <br>
+        {% endfor %}
+    {% endblock content %}
 </body>
 </html>
