@@ -3,48 +3,46 @@
 <head>
 	<title>Contact V11</title>
 	<meta charset="UTF-8">
-    {% load static %}
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="{% static 'core/images/icons/favicon.ico' %}"/>
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+
+ 
+
+    <!--===============================================================================================-->
+	<link   href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 <!--===============================================================================================-->
-	
-    <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    
-    
-  <!--<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'core/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'core/fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'core/vendor/animate/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'core/vendor/css-hamburgers/hamburgers.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'core/vendor/select2/select2.min.css' %}">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'core/css/util.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'core/css/main.css' %}">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
 <body>
 
 
-	<div class="container-contact100" style="background-image:   url('{% static 'core/images/bg-01.jpg' %}');">
+	<div class="container-contact100" style="background-image: url('images/bg-01.jpg');">
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form">
 				<span class="contact100-form-title">
-					APITAX
+					Get in Touch
 				</span>
 
-				<div class="wrap-input100 rs1-wrap-input100 " data-validate="Name is required">
-					<span class="label-input100">Fecha</span>
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Tell us your name *</span>
 					<input class="input100" type="text" name="name" placeholder="Enter your name">
 				</div>
 
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<span class="label-input100">Hora</span>
+					<span class="label-input100">Enter your email *</span>
 					<input class="input100" type="text" name="email" placeholder="Enter your email">
 				</div>
 
@@ -54,7 +52,7 @@
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<span class="label-input100">Descripción</span>
+					<span class="label-input100">Message</span>
 					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
 				</div>
 
@@ -79,14 +77,14 @@
 	<div id="dropDownSelect1"></div>
 
 <!--===============================================================================================-->
-	<script src="{% static 'core/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script src="{% static 'core/vendor/bootstrap/js/popper.js' %}"></script>
-	<script src="{% static 'core/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-<!--==================================================================================-->
-	<script src="{% static 'core/vendor/select2/select2.min.js' %}"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-	<script src="{% static 'core/js/main.js' %}"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
