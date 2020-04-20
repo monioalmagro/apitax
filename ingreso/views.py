@@ -11,6 +11,6 @@ def gasto(request):
     cuenta = Cuenta.objects.all()
     return render(request,"ingreso/gasto.html", {'cuenta':cuenta})  
 
-def movimientos(request):      
-    cuenta = Cuenta.objects.all()
-    return render(request,"ingreso/movimientos.html", {'cuenta':cuenta})
+def movimiento(request):      
+    movimiento = Movimiento.objects.all()
+    return render(request,"ingreso/movimiento.html", {'movimiento':movimiento})
