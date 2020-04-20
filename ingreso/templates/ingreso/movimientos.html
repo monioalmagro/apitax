@@ -6,12 +6,13 @@
     <title>movimientos</title>
 </head>
 <body>
-    <h1>Soy movimientos</h1>
+    <h1>Soy  ggmovimientos</h1>
     {% block content %}
         {% for cuentas in cuenta %}
-            {{cuentas.cuenta}}
-            {{cuentas.categoria}}
-            {{cuentas.signo}}
+            <h2>{{cuentas.cuenta}}</h2>
+            <h2>{{cuentas.categoria}}</h2>
+            <h2>{{cuentas.signo}}</h2>
+    
         {% endfor %}
     {% endblock content %}
 </body>
