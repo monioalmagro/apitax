@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Ingreso, Categoria, Movimiento
+from .models import Ingreso, Cuenta, Movimiento
 
 class CategoryAdmin(admin.ModelAdmin):
     readonly_fields=('created', 'updated')
@@ -20,7 +20,7 @@ class IngresoAdmin(admin.ModelAdmin):
     readonly_fields=('monto','descripcion','fecha')
 
 
-class CategoriaAdmin(admin.ModelAdmin):
+class CuentaAdmin(admin.ModelAdmin):
     readonly_fields=('cuenta','categoria','signo')
 
 
@@ -32,7 +32,7 @@ class MovimientoAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Ingreso)
-admin.site.register(Categoria)
+admin.site.register(Cuenta)
 admin.site.register(Movimiento)
 
  

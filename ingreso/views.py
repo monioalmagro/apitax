@@ -6,3 +6,7 @@ from .models import Ingreso
 def ingreso(request):
     ingreso = Ingreso.objects.all()
     return render(request, "ingreso/ingreso.html", {'ingreso':ingreso})
+
+def gasto(request):
+    gasto = Ingreso.objects.all()
+    return render(recuest,"ingreso/gasto.html",{'ingreso':ingreso})    
