@@ -33,7 +33,7 @@ class Movimiento(models.Model):
     cantidad=models.IntegerField("cantidad")
     signo=models.CharField("signo", max_length=50)
     detalle=models.CharField("detalle", max_length=50)
-    models.DateTimeField("fecha", auto_now=True, auto_now_add=True)
+    fecha = models.DateTimeField("fecha", auto_now=True, auto_now_add=False)
 
     
 
