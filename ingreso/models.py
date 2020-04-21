@@ -5,7 +5,7 @@ class Ingreso(models.Model):
     
     monto=models.IntegerField(verbose_name="monto")
     descripcion=models.CharField(verbose_name="descripcion" ,max_length=200)
-    fecha= models.DateTimeField( verbose_name='Fecha de creación')
+    fecha= models.DateTimeField( verbose_name='Fecha de creación',default = now)
     
 
     class Meta:
